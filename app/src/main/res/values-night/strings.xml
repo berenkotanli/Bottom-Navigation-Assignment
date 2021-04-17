@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firstNumber">Enter the first number</string>
+    <string name="secondNumber">Enter the second number</string>
+</resources>

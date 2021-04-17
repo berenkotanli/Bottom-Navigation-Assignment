@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomNavigationAssignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstNumber">Enter the first number</string>
+    <string name="secondNumber">Enter the second number</string>
+</resources>

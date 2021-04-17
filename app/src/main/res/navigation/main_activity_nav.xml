@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/MultiplyFragment"
+        android:name="com.beren.bottomnavigationassignment.MultiplyFragment"
+        android:label="fragment_multiply"
+        tools:layout="@layout/fragment_multiply" >
+        <action
+            android:id="@+id/multiplyResultFragmentGecis"
+            app:destination="@id/multiplyResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SumFragment"
+        android:name="com.beren.bottomnavigationassignment.SumFragment"
+        android:label="fragment_sum"
+        tools:layout="@layout/fragment_sum" >
+        <action
+            android:id="@+id/sumSonucGecis"
+            app:destination="@id/sumResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.beren.bottomnavigationassignment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/multiplyResultFragment"
+        android:name="com.beren.bottomnavigationassignment.multiplyResultFragment"
+        android:label="fragment_multiply_result"
+        tools:layout="@layout/fragment_multiply_result" >
+        <argument
+            android:name="multiplyResult"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sumResultFragment"
+        android:name="com.beren.bottomnavigationassignment.sumResultFragment"
+        android:label="fragment_sum_result"
+        tools:layout="@layout/fragment_sum_result" >
+        <argument
+            android:name="sumresult"
+            app:argType="string" />
+    </fragment>
+</navigation>
